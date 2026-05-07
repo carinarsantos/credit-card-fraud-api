@@ -1,14 +1,13 @@
-
-Detecção de Fraude em Cartões de Crédito
+# Detecção de Fraudes em Cartões de Crédito
 # Credit Card Fraud Detection: Full-Stack Data Solution
 
 Este projeto implementa uma solução *end-to-end* para detecção de fraudes em transações de cartões de crédito. A arquitetura integra modelagem preditiva avançada e engenharia de software, disponibilizando a inferência via API REST e o monitoramento operacional através de um dashboard interativo.
 
-## Objetivo do Projeto
+## 🎯 Objetivo do Projeto
 
 O foco é identificar transações fraudulentas em um conjunto de dados maciçamente desbalanceado (Dataset ULB - Université Libre de Bruxelles). A solução prioriza a **minimização de prejuízos financeiros reais**, ajustando de forma rigorosa o *trade-off* entre Sensibilidade (Recall) e Precisão, superando a visão limitante de apenas buscar alta "acurácia".
 
-## Arquitetura do Sistema
+## 🏗️ Arquitetura do Sistema
 
 A base do projeto segue os princípios de modularização e separação de responsabilidades (Microserviços):
 
@@ -17,7 +16,7 @@ A base do projeto segue os princípios de modularização e separação de respo
 *   **Streamlit (Frontend):** Dashboard analítico para auditoria, exibindo métricas de performance (AUPRC), *Data Drift* e testes de inferência em tempo real.
 *   **Pipeline de Qualidade:** Cobertura de testes unitários automatizados para garantir a estabilidade das transformações de dados e regras de roteamento.
 
-## Tecnologias Utilizadas
+## 💻 Tecnologias Utilizadas
 
 *   **Linguagem Core:** `Python 3.10+`
 *   **Ciência e Engenharia de Dados:** `Pandas`, `NumPy`, `Scikit-Learn`, `XGBoost/LightGBM`, `SMOTE` (Balanceamento).
@@ -26,9 +25,9 @@ A base do projeto segue os princípios de modularização e separação de respo
 *   **Persistência e ORM:** `SQLite`, `SQLModel`.
 *   **DevOps e Qualidade:** `Docker`, `Docker Compose`, `Pytest`.
 
-## Estrutura do Repositório
+## 📂 Estrutura do Repositório
 
-
+```text
 ├── app/               # Interface frontend analítica (Streamlit)
 ├── src/               # Código-fonte backend (API, Serviços, Lógica de Banco)
 ├── notebooks/         # Ambiente de pesquisa, EDA e versionamento inicial de modelos
@@ -36,9 +35,9 @@ A base do projeto segue os princípios de modularização e separação de respo
 ├── models/            # (Ignorado no Git) Artefatos serializados (.joblib)
 ├── data/              # (Ignorado no Git) Banco SQLite persistente e datasets
 └── docker-compose.yml # Orquestração da stack
+```
 
-
-## Diferenciais Técnicos
+## 🚀 Diferenciais Técnicos
 
 Diferente de implementações acadêmicas de laboratório, este projeto foca em "Machine Learning Operacional":
 
@@ -46,9 +45,9 @@ Diferente de implementações acadêmicas de laboratório, este projeto foca em 
 2.  **Observabilidade e Resiliência:** Registro assíncrono de logs operacionais (latência, predições, status) e monitoramento de *Data Drift* contínuo.
 3.  **Persistência via Volumes:** Uso estratégico do SQLite montado via volumes Docker para auditoria histórica sem dependência de nuvem.
 
+---
 
-
-## Como Executar o Projeto
+## 🛠️ Como Executar o Projeto
 
 A execução principal é orquestrada via Docker.
 
@@ -57,9 +56,9 @@ A execução principal é orquestrada via Docker.
 Certifique-se de que o **Docker** e o **Docker Compose** estão instalados e rodando.
 
 Na raiz do repositório, execute:
-
+```bash
 docker-compose up --build
-
+```
 
 **Acessos:**
 *   **API (Backend):** [http://localhost:8000](http://localhost:8000) *(Documentação Swagger em `/docs`)*
@@ -69,7 +68,7 @@ docker-compose up --build
 
 Caso queira rodar os testes unitários ou desenvolver localmente, configure o ambiente:
 
-
+```bash
 # 1. Clone o repositório
 git clone https://github.com/seu-usuario/credit-card-fraud-detection.git
 cd credit-card-fraud-detection
@@ -84,13 +83,10 @@ pip install -r requirements.txt
 
 # 4. Execute a suíte de testes
 pytest
+```
 
-
-## Segurança e Persistência
+## 🔒 Segurança e Persistência
 
 *   **API Key:** Todas as requisições de predição exigem o header `X-API-Key`. Para desenvolvimento, a chave de segurança é injetada via variável de ambiente (definida no `.env` ou arquivo compose).
-*   **Persistência de Dados:** Os logs operacionais e de predição são armazenados de forma persistente em `./data/fraud_logs.sqlite`, preservando histórico entre reinicializações de contêineres.
-
-
-
-De acordo para eu gerar o código analítico e os gráficos (via Plotly) que devem estar neste notebook inicial?
+*   Persistência de Dados: Os logs operacionais e de predição são armazenados de forma persistente em ./data/fraud_logs.sqlite, preservando histórico entre reinicializações de contêineres.
+*   **Persistência de Dados:** Os logs operacionais e de predição são armazenados de forma persistente em `./data/fraud_logs.sqlite`, preservando histórico entre reinicializações de contêineres. acordo para eu gerar o código analítico e os gráficos (via Plotly) que devem estar neste notebook inicial?
