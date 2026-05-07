@@ -1,7 +1,3 @@
-Como especialista em engenharia e ciência de dados, estruturei o texto do seu README para destacar não apenas a modelagem preditiva, mas também o rigor de engenharia (testes unitários e separação de camadas). Este equilíbrio é o que atrai gestores que buscam profissionais capazes de colocar modelos em produção de forma sustentável.
-
-Abaixo, o conteúdo técnico refinado para o seu arquivo README.md.
-
 Credit Card Fraud Detection: Full-Stack Data Solution
 Este projeto implementa uma solução completa para detecção de fraudes em transações de cartões de crédito. A abordagem integra ciência de dados para modelagem preditiva e engenharia de software para disponibilizar a solução via API e dashboard interativo.
 
