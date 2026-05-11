@@ -89,4 +89,3 @@ pytest
 
 *   **API Key:** Todas as requisições de predição exigem o header `X-API-Key`. Para desenvolvimento, a chave de segurança é injetada via variável de ambiente (definida no `.env` ou arquivo compose).
 *   Persistência de Dados: Os logs operacionais e de predição são armazenados de forma persistente em ./data/fraud_logs.sqlite, preservando histórico entre reinicializações de contêineres.
-*   **Persistência de Dados:** Os logs operacionais e de predição são armazenados de forma persistente em `./data/fraud_logs.sqlite`, preservando histórico entre reinicializações de contêineres. acordo para eu gerar o código analítico e os gráficos (via Plotly) que devem estar neste notebook inicial?
