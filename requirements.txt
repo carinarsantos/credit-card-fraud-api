@@ -1,0 +1,24 @@
+# --- Backend (API e Banco de Dados) ---
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+sqlmodel==0.0.14
+pydantic==2.4.2
+
+# --- Data Science & Machine Learning ---
+pandas==2.1.2
+numpy==1.26.1
+scikit-learn==1.3.2
+imbalanced-learn==0.11.0
+joblib==1.3.2
+# Instale a engine do pyarrow para ler/escrever arquivos .parquet
+pyarrow==14.0.1 
+
+# --- Frontend (Dashboard & Visualização) ---
+streamlit==1.28.1
+requests==2.31.0
+plotly==5.18.0
+scipy==1.11.3
+
+# --- Ferramentas de Teste ---
+pytest==7.4.3
+httpx==0.25.1
