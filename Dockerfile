@@ -20,5 +20,5 @@ COPY . .
 # Expõe as portas (documentação)
 EXPOSE 8000 8501
 
-# O comando de inicialização será gerenciado pelo docker-compose
-CMD ["echo", "Container pronto. Use docker-compose."]
+# Comando de inicialização padrão (usado pelo Hugging Face Spaces na porta 7860)
+CMD ["uvicorn", "src.api.routes:app", "--host", "0.0.0.0", "--port", "7860"]

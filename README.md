@@ -1,5 +1,15 @@
+---
+title: Credit Card Fraud API
+emoji: 💳
+colorFrom: blue
+colorTo: red
+sdk: docker
+app_port: 7860
+---
+
 # Detecção de Fraudes em Cartões de Crédito
 # Credit Card Fraud Detection: Full-Stack Data Solution
+
 
 Este projeto implementa uma solução *end-to-end* para detecção de fraudes em transações de cartões de crédito. A arquitetura integra modelagem preditiva avançada e engenharia de software, disponibilizando a inferência via API REST e o monitoramento operacional através de um dashboard interativo.
 
