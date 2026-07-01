@@ -70,7 +70,7 @@ Caso queira rodar os testes unitários ou desenvolver localmente, configure o am
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/seu-usuario/credit-card-fraud-detection.git
+git clone https://github.com/carinarsantos/credit-card-fraud-api.git
 cd credit-card-fraud-detection
 
 # 2. Crie e ative o ambiente virtual
