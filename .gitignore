@@ -32,6 +32,10 @@ artifacts/*.joblib
 artifacts/*.pkl
 artifacts/baseline.csv
 
+# Exceções necessárias para o deploy (arquivos leves necessários na inicialização da API)
+!artifacts/fraud_model.joblib
+!artifacts/baseline.csv
+
 # Database
 *.sqlite
 *.sqlite-journal
